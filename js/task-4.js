@@ -3,7 +3,7 @@
 // другий параметр gender — рядок, що зберігає стать.
 // Функція має використовувати ланцюжок виклику методів та повертати загальний баланс користувачів (властивість balance), стать яких (властивість gender) збігається зі значенням параметра gender.
 // Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її роботи.
-const getTotalBalanceByGender = (users, gender) => users.filter(user => user.gender == gender).reduce((acc, el) => acc + el, 0);
+const getTotalBalanceByGender = (users, gender) => users.filter(user => user.gender == gender).reduce((acc, el) => acc + el.balance, 0);
 const clients = [
 	{
     name: "Moore Hensley",
